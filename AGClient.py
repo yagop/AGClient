@@ -92,7 +92,7 @@ def get_course_content(token, course_id):
         file_type = file_content.find("KEY[@name='type']/VALUE").text
         if file_type == 'file':
             moodle_file = {}
-            print 'File: ' + file_name
+            # print 'File: ' + file_name
             moodle_file['file_name'] = file_name
             moodle_file['file_url'] = file_url
             files.append(moodle_file)
@@ -106,6 +106,7 @@ def save_files(token, course_id, files):
         os.makedirs(path)
 
     for moodle_file in files:
+        print 'Downloading: ' + moodle_file['file_name']
         url = moodle_file['file_url'] + '&token=' + token
         file = path + '/' + moodle_file['file_name']
         response = urllib2.urlopen(url)
