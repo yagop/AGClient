@@ -7,6 +7,7 @@ Can download all files from every course into cursos/id folder.
 
 Usage
 ----------------------
+Backup all your course files:
 ```
 ./AGClient.py [-h] -u User NIA -p Password
 ```
