@@ -3,7 +3,7 @@ AGClient
 
 UC3M [AulaGlobal](http://aulaglobal.uc3m.es) (Moodle) from console.
 
-Can download all files from every course in to cursos/id folder.
+Can download all files from every course into cursos/id folder.
 
 Usage
 ----------------------
@@ -13,7 +13,7 @@ Usage
 
 Requirements
 ----------------------
-Python (2.7) is required
+Python (2.7) is required.
 
 ```
 sudo apt-get install python
