@@ -3,13 +3,16 @@ AGClient
 
 UC3M [AulaGlobal](http://aulaglobal.uc3m.es) (Moodle) from console.
 
-Can download all files from every course into cursos/id folder.
+Backup: Can download all files from every course into cursos/id folder.
+
+Of course, this is Open Source, you can checkout the source code and see how secure is.
 
 Usage
 ----------------------
 Backup all your course files:
 ```
-./AGClient.py [-h] -u User NIA -p Password
+wget https://raw.githubusercontent.com/yagop/AGClient/master/AGClient.py
+python AGClient.py -u <NIA> -p <Password>
 ```
 
 Requirements
